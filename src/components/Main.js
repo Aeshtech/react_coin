@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Main() {
+export default function Main({props}) {
+    const {collapsed} = props
+
     return (
         <>
-            <div class="back_handle">
+            <div class="back_handle" style={{marginLeft: `${collapsed ? "218px" : "0px"}`}}>
                 <div class="bg_image_main"></div>
                 <section class="main_home">
                     <div class="top_home">
@@ -20,7 +22,7 @@ export default function Main() {
                                             <div class="card_content">
                                                 <h4>Marketcap</h4>
 
-                                                <h2> <span class="fr_color" id="">$0.00</span>
+                                                <h2> <span class="fr_color" id="">$11.97M</span>
                                                 </h2>
                                             </div>
                                         </div>
@@ -28,7 +30,7 @@ export default function Main() {
                                             <div class="card_content">
                                                 <h4>Circulating Supply</h4>
 
-                                                <h2> <span class="fr_color" id="">$0.00</span>
+                                                <h2> <span class="fr_color" id="">$38.35B</span>
                                                 </h2>
                                             </div>
                                         </div>
@@ -36,7 +38,7 @@ export default function Main() {
                                             <div class="card_content">
                                                 <h4>Holders</h4>
 
-                                                <h2> <span class="fr_color" id="">524,315.1</span>
+                                                <h2> <span class="fr_color" id="">82K</span>
                                                 </h2>
                                             </div>
                                         </div>
@@ -44,7 +46,7 @@ export default function Main() {
                                             <div class="card_content">
                                                 <h4>Oryen Price</h4>
 
-                                                <h2> <span class="fr_color" id="">$0.00</span>
+                                                <h2> <span class="fr_color" id="">$0.0003</span>
                                                 </h2>
                                             </div>
                                         </div>
@@ -58,7 +60,7 @@ export default function Main() {
                                             <div class="card_content">
                                                 <h4>Liquidity</h4>
                                                 <h2>
-                                                    <span class="fr_color" id="">($0.00)</span></h2>
+                                                    <span class="fr_color" id="">($1.61M)</span></h2>
                                                 <div class="persentage_value" style={{color:"#ff5e62"}}>-0.33%</div>
                                             </div>
                                         </div>
@@ -70,7 +72,7 @@ export default function Main() {
                                             <div class="card_content">
                                                 <h4>Treasury</h4>
                                                 <h2>
-                                                    <span class="fr_color" id="bnbpaid">0.00</span></h2>
+                                                    <span class="fr_color" id="bnbpaid">$8.34M</span></h2>
                                                 <div class="persentage_value" style={{color:"#ff5e62"}}>-0.33%</div>
 
                                             </div>
@@ -83,7 +85,7 @@ export default function Main() {
                                             <div class="card_content">
                                                 <h4 class="h4_high"><i class="fa-solid fa-circle-check"></i> Fixed APY</h4>
 
-                                                <h2> <span class="fr_color" id="">0.00%</span>
+                                                <h2> <span class="fr_color" id="">102 483.58%%</span>
                                                 </h2>
                                                 <h5>A Simple Buy-Hold-Earn System.</h5>
                                             </div>

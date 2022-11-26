@@ -385,7 +385,7 @@ body.light .back_handle {
 }
 
 .back_handle {
-  margin-left: 218px;
+  /* margin-left: 218px; */
   text-align: left;
   padding-top: 85px;
   background-repeat: no-repeat;
@@ -489,7 +489,6 @@ body.light .back_handle {
   position: relative;
   background-size: cover;
   padding-bottom: 10px;
-  border-radius: 200px;
   color: #fff;
   margin-bottom: 20px;
   position: relative;
@@ -601,4 +600,12 @@ img.img-responsive.logo_high {
   position: absolute;
   right: 00px;
   top: 15px;
+}
+.card_content h2 {
+  margin: 0px;
+  font-size: 30px;
+  padding-top: 8px;
+  line-height: normal;
+  text-transform: capitalize;
+  font-family: Nexa Heavy;
 }

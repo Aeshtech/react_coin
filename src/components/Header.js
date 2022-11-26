@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-export default function Header() {
-  const [collapsed, setCollapsed] = useState(true);
+export default function Header({props}) {
+  const {collapsed, setCollapsed} = props
 
   function toggleNav() {
     setCollapsed(!collapsed);
